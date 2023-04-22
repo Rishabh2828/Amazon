@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Amazon"
+        tools:targetApi="31">
+        <activity
+            android:name=".DescriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryActivities.BooksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryActivities.ToysActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryActivities.GroceriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryActivities.PharamacyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryActivities.BeautyProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryActivities.FurnitureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryActivities.ElectronicsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryActivities.ClothActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

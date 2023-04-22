@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryActivities.BooksActivity">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:id="@+id/amazonName"
+        android:text="Amazon"
+        android:textSize="40sp"
+        android:textColor="@color/lavender"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/amazonImage"
+        android:layout_marginLeft="18dp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/amazonDesc"
+        android:text="Shop from A to Z"
+        android:fontFamily="sans-serif-black"
+        android:textSize="14sp"
+        android:layout_marginStart="18dp"
+        android:textColor="@color/lavender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/amazonName"
+        app:layout_constraintEnd_toStartOf="@+id/amazonImage"
+        android:layout_marginLeft="18dp" />
+
+
+    <ImageView
+        android:id="@+id/amazonImage"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:src="@drawable/amazon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/amazonName"
+        app:layout_constraintTop_toTopOf="@+id/amazonName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
